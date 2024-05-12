@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    
     <!-- custom css -->
     <link rel="stylesheet" href="./style.css">
     <title>Data Filtering</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Property Search</h1>
+    </header>
+
+    <!-- filters -->
+    <div class="filter-container">
+
+        <!-- location filter -->
+        <div class="filter"></div>
+
+        <!-- bedroom filter -->
+        <div class="filter"></div>
+
+        <!-- bathroom filter -->
+        <div class="filter"></div>
+
+        <!-- price minimum -->
+        <div class="filter"></div>
+
+        <!-- price maximum -->
+        <div class="filter"></div>
+    </div>
+
+    <!-- results grid -->
+    <div class="results" id="results"></div>
+
+    <!-- modal - TO BE DONE -->
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/42e32376cc.js" crossorigin="anonymous"></script>
+
     <!-- custom js -->
     <script src="./script.js"></script>
 </body>
+
 </html>
