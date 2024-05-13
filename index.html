@@ -21,20 +21,94 @@
     <div class="filter-container">
 
         <!-- location filter -->
-        <div class="filter"></div>
+        <div class="filter">
+            <label for="location">Location</label>
+            <select name="location" id="location" class="full-width-select">
+
+                <!-- options for the select & values -->
+                <option value="">All of New Zealand</option>
+                <option value="Northland">Northland</option>
+                <option value="Auckland">Auckland</option>
+                <option value="Waikato">Waikato</option>
+                <option value="Bay of Plenty">Bay of Plenty</option>
+                <option value="Gisborne">Gisborne</option>
+                <option value="Hawkes Bay">Hawkes Bay</option>
+               <!-- rest of options -->
+            </select>
+        </div>
 
         <!-- bedroom filter -->
-        <div class="filter"></div>
+        <div class="filter">
+            <label for="bedrooms">Bedrooms Min.</label>
+            <select name="bedrooms" id="bedrooms" class="full-width-select">
+
+                <!-- options for bedrooms -->
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+                <option value="6">6+</option>
+            </select>
+        </div>
 
         <!-- bathroom filter -->
-        <div class="filter"></div>
+        <div class="filter">
+            <label for="bathrooms">Bathrooms Min.</label>
+            <select name="bathrooms" id="bathrooms" class="full-width-select">
+
+                <!-- options for bathrooms -->
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4 or more</option>
+            </select>
+        </div>
 
         <!-- price minimum -->
-        <div class="filter"></div>
+        <div class="filter">
+            <label for="pricemin">Price Min.</label>
+            <select name="pricemin" id="pricemin" class="full-width-select">
+
+                <!-- options for price min -->
+                <option value="">Any</option>
+                <option value="100000">$100K</option>
+                <option value="200000">$200K</option>
+                <option value="300000">$300K</option>
+                <option value="400000">$400K</option>
+                <option value="500000">$500K</option>
+                <option value="600000">$600K</option>
+                <option value="700000">$700K</option>
+                <option value="800000">$800K</option>
+                <option value="900000">$900K</option>
+                <option value="1000000">$1M</option>
+            </select>
+        </div>
 
         <!-- price maximum -->
-        <div class="filter"></div>
+        <div class="filter">
+            <label for="pricemax">Price Max.</label>
+            <select name="pricemax" id="pricemax" class="full-width-select">
+
+                <!-- options for price max -->
+                <option value="">Any</option>
+                <option value="100000">$100K</option>
+                <option value="200000">$200K</option>
+                <option value="300000">$300K</option>
+                <option value="400000">$400K</option>
+                <option value="500000">$500K</option>
+                <option value="600000">$600K</option>
+                <option value="700000">$700K</option>
+                <option value="800000">$800K</option>
+                <option value="900000">$900K</option>
+                <option value="1000000">$1M</option>
+            </select>
+        </div>
+
     </div>
+    <!-- end of filter container -->
 
     <!-- results grid -->
     <div class="results" id="results"></div>
