@@ -170,31 +170,31 @@ const pricemax = document.getElementById("pricemax");
 
 // on change event on each filter
 // location
-locationFilter.addEventListener("change", function() {
+locationFilter.addEventListener("change", function () {
     console.dir(locationFilter.value);
     filterAndPopulateResults();
 });
 
 // bedrooms
-bedroomsFilter.addEventListener("change", function() {
+bedroomsFilter.addEventListener("change", function () {
     console.dir(bedroomsFilter.value);
     filterAndPopulateResults();
 });
 
 // bathrooms
-bathroomsFilter.addEventListener("change", function() {
+bathroomsFilter.addEventListener("change", function () {
     console.dir(bathroomsFilter.value);
     filterAndPopulateResults();
 });
 
 // price min
-pricemin.addEventListener("change", function() {
+pricemin.addEventListener("change", function () {
     console.dir(pricemin.value);
     filterAndPopulateResults();
 });
 
 // // price max
-pricemax.addEventListener("change", function() {
+pricemax.addEventListener("change", function () {
     console.dir(pricemax.value);
     filterAndPopulateResults();
 });
@@ -213,7 +213,7 @@ function filterProperties() {
         if (filterValue && !propertyLocation.includes(filterValue)) {
 
             // if (Auckland && !propertyLocation.includes(Auckland))
-            // if the property doen't inclde the filter value, reutn false
+            // if the property doen't include the filter value, reutn false
             return false;
         }
 
@@ -245,13 +245,28 @@ function filterProperties() {
     return filteredProperties;
 }
 
-
-
 // sort results - sort by price - low to high
+function sortPropertiesByPriceLowToHigh(properties) {
+    return properties.sort((a, b) => {
+        const priceA = parseFloat(a.price.replace(/\$/g, "").replace(/,/g, ""));
+        const priceB = parseFloat(b.price.replace(/\$/g, "").replace(/,/g, ""));
+        return priceA - priceB;
+    })
+}
+
+function sortedPropertiesByPriceHighToLow(properties) {
+    return properties.sort((b, a) => {
+        const priceA = parseFloat(a.price.replace(/\$/g, "").replace(/,/g, ""));
+        const priceB = parseFloat(b.price.replace(/\$/g, "").replace(/,/g, ""));
+        return priceB - priceA;
+    })
+}
 
 // filter and populate results
 function filterAndPopulateResults() {
     const filteredProperties = filterProperties();
+    // sort properties (low to high) before populating 
+    const sortedProperties = sortPropertiesByPriceLowToHigh(filteredProperties); // sorting filtered properties in previous line
     populateResults(filteredProperties);
 }
 
@@ -273,7 +288,7 @@ function populateResults(filteredResults) {
     } else {
         // if filterResults in is not empty
         filteredResults.forEach(property => {
-    
+
             // Create a card for that property:
             const propertyCardHTML = `
             <div class="property">
@@ -301,11 +316,11 @@ function populateResults(filteredResults) {
             </div>
             `;
             resultsDiv.innerHTML += propertyCardHTML;
+            attachModalToImages(); // attach event listeners straight after population
         });
     }
 
 }
-
 
 
 // initialise swiper js
@@ -313,10 +328,62 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'vertical',
     loop: true,
-  
+
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true, // enables pagination bullets
+        el: '.swiper-pagination',
+        clickable: true, // enables pagination bullets
     },
-  });
+});
+
+function attachModalToImages() {
+    // get all the iamges from the property
+    const images = document.querySelectorAll(".property-image");
+    // get the details modal from the html
+    const detailsModal = document.getElementById("details-modal");
+
+    // run for loop over the image array to add a click event to each image
+    for (let i = 0; i < images.length; i++) {
+        images[i].addEventListener("click", function(event) {
+            console.log("img click working");
+            detailsModal.showModal();
+
+            // add close function
+            closeDetailsModal();
+
+            // populate modal with the correct info
+            console.log(event.target.getAttribute("value"));
+            populateModal(event.target.getAttribute("value"))
+        })
+    }
+}
+
+function closeDetailsModal() {
+    // get the close button
+    const close = document.getElementById("close-modal");
+    const detailsModal = document.getElementById("details-modal");
+
+    // click event on close modal to close modal
+    close.addEventListener("click", function() {
+        detailsModal.close();
+    })
+    
+}
+
+function populateModal(imageId) {
+    // get the modal
+    const detailsModal = document.querySelector(".modal-content");
+
+    detailsModal.innerHTML = `
+        <img src="${properties[imageId -1].image}" alt="${properties[imageId -1].name} image 1">
+        <h2>${properties[imageId -1].name}</h2>
+        <p>${properties[imageId -1].location}</p>
+        <h4>${properties[imageId -1].price}</h4>
+        <div class="modal-ammenities">
+            <p>${properties[imageId -1].bedrooms} <i class="fa-solid fa-bed"></i></p>
+            <p>${properties[imageId -1].bathrooms} <i class="fa-solid fa-bath"></i></p>
+        </div>
+        <p class="property-description">${properties[imageId -1].description}</p>
+        <button class="booking-button">Enquire Now</button>
+    `
+}

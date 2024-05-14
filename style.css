@@ -1,7 +1,7 @@
 /* import poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@ header {
     background-size: cover;
 }
 
-header h1{
+header h1 {
     font-size: 6em;
     font-weight: 700;
     letter-spacing: 2px;
@@ -27,11 +27,11 @@ header h1{
 
 .filter-container {
     display: flex;
-   justify-content: center;
-   gap: 40px;
-   margin: 24px;
-   padding: 30px 0;
-   background-color: #1f1f1f;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 24px;
+    padding: 30px 0;
+    background-color: #1f1f1f;
 }
 
 .filter {
@@ -51,6 +51,13 @@ select {
     border: 1px solid #1f1f1f;
 }
 
+.sorting-text {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
 .results {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -64,6 +71,7 @@ select {
 }
 
 .property {
+    /* width: 370px; */
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -75,12 +83,12 @@ select {
 }
 
 .property:hover {
-    scale: 1.02;
+    scale: 1.03;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.property image {
+.property-image {
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -92,9 +100,9 @@ select {
 }
 
 .property details h2 {
-   margin: 8px 0;
-   font-weight: 500;
-   font-size: 20px;
+    margin: 8px 0;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .property details p {
@@ -130,7 +138,6 @@ select {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     height: 250px;
-    width: 360px;
 }
 
 .swiper-pagination {
@@ -145,3 +152,135 @@ select {
     width: 16px;
     height: 16px;
 }
+
+#details-modal {
+    z-index: 10;
+    position: fixed;
+    width: 40%;
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    border: none;
+    position: relative;
+    padding-bottom: 42px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+body.modal-open {
+    overflow: hidden; /* prevent scrolling when modal is open */
+}
+
+#close-modal {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    border: none;
+    background-color: #1e9918;
+    border-radius: 50%;
+    padding: 6px 12px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal-content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.modal-content h2 {
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.modal-content h4 {
+    color: #1e9918;
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.modal-ammenities {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 16px;
+}
+
+.property-description {
+    font-weight: 300;
+    margin-top: 16px;
+    padding: 0px 60px;
+    line-height: 150%;
+}
+
+#booking-btn {
+    padding: 12px 16px;
+    margin-top: 30px;
+    background-color: #1e9918;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* media queries */
+@media only screen and (max-width: 1200px) {
+    header h1 {
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .filter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    select {
+        width: 600px;
+    }
+
+    .results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #details-modal {
+        width: 80%;       
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    select {
+        max-width: 300px;
+    }
+
+    #details-modal {
+       height: 80vh;     
+    }
+
+    .property-description {
+        padding: 0 32px;
+    }
+
+}
+
