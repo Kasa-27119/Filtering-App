@@ -14,7 +14,8 @@ const properties = [{
     price: "$350,000",
     bedrooms: 3,
     bathrooms: 2.5,
-    image: "https://source.unsplash.com/category/house/?modern+loft"
+    image: "https://source.unsplash.com/category/house/?modern+loft",
+    description: `Introducing the 'Modern Loft', an architectural gem nestled in the serene beauty of the Bay of Plenty. This sleek and stylish loft offers a contemporary living experience with an abundance of natural light streaming through expansive windows. Boasting clean lines and modern amenities, this space is perfect for those who appreciate minimalist design and functionality.<br><br>From the spacious open-plan layout to the private balcony overlooking lush greenery, every detail of the 'Modern Loft' is designed to inspire and delight. Experience the epitome of coastal chic living in this stunning retreat.`
 }, {
     id: 3,
     name: "Seaside Villa",
@@ -22,7 +23,8 @@ const properties = [{
     price: "$1,000,000",
     bedrooms: 4,
     bathrooms: 3,
-    image: "https://source.unsplash.com/category/house/?seaside+villa"
+    image: "https://source.unsplash.com/category/house/?seaside+villa",
+    description: `Introducing the epitome of coastal elegance - the 'Seaside Villa' nestled along the pristine shores of Northland. This exquisite villa offers a haven of luxury and tranquility, where panoramic ocean views and soft sea breezes create an unparalleled sense of serenity. Step inside to discover a world of refined living, with spacious interiors bathed in natural light and adorned with coastal-inspired décor.<br><br>Outside, expansive terraces beckon for al fresco dining or simply lounging in the sun, while direct access to the sandy beach invites endless opportunities for seaside relaxation and recreation. Whether you're seeking a private retreat or an entertainer's dream, the 'Seaside Villa' promises an extraordinary lifestyle immersed in the beauty of New Zealand's coastal landscape.`
 }, {
     id: 4,
     name: "Rustic Cabin",
@@ -30,7 +32,8 @@ const properties = [{
     price: "$150,000",
     bedrooms: 1,
     bathrooms: 1,
-    image: "https://source.unsplash.com/category/house/?rustic+cabin"
+    image: "https://source.unsplash.com/category/house/?rustic+cabin",
+    description: `Introducing our charming "Rustic Cabin," nestled amidst the serene beauty of Marlborough, New Zealand. This cozy retreat offers a perfect blend of rustic charm and modern comfort, providing a tranquil escape from the hustle and bustle of city life.<br><br>Surrounded by lush greenery and breathtaking views of Marlborough's picturesque landscapes, this cabin invites you to unwind and reconnect with nature. Step inside to discover a warm and inviting interior adorned with natural wood finishes, cozy furnishings, and rustic décor, creating a welcoming ambiance that exudes relaxation.<br><br>Outside, a spacious deck beckons you to soak in the tranquility of your surroundings, with ample space for alfresco dining, stargazing, or simply enjoying the fresh air.`
 }, {
     id: 5,
     name: "Urban Apartment",
@@ -38,7 +41,8 @@ const properties = [{
     price: "$500,000",
     bedrooms: 2,
     bathrooms: 1.5,
-    image: "https://source.unsplash.com/category/house/?urban+apartment"
+    image: "https://source.unsplash.com/category/house/?urban+apartment",
+    description: `Discover the epitome of urban living at the 'Urban Apartment' in the vibrant heart of Wellington. This stylish abode offers a modern sanctuary amidst the bustling cityscape, boasting sleek design and contemporary comforts. With floor-to-ceiling windows framing city views, natural light floods the open-plan living spaces, creating an inviting ambiance.<br><br>Enjoy the convenience of inner-city living with cafes, restaurants, and cultural attractions right at your doorstep. Whether you're relaxing on the private balcony or exploring the dynamic city scene, the 'Urban Apartment' promises a lifestyle of sophistication and convenience in the heart of Wellington.`
 }, {
     id: 6,
     name: "Luxury Penthouse",
@@ -46,7 +50,8 @@ const properties = [{
     price: "$2,200,000",
     bedrooms: 4,
     bathrooms: 3.5,
-    image: "https://source.unsplash.com/category/house/?luxury+penthouse"
+    image: "https://source.unsplash.com/category/house/?luxury+penthouse",
+    description: `Introducing the epitome of refined living - the 'Luxury Penthouse' in the charming city of Nelson. Perched atop an exclusive residential tower, this exceptional penthouse offers unrivaled elegance and breathtaking views of Nelson's picturesque landscapes. Step into a world of luxury where every detail has been meticulously crafted to provide the utmost comfort and sophistication.<br><br>From the expansive living spaces bathed in natural light to the private terrace offering panoramic vistas of the surrounding mountains and coastline, this residence is a sanctuary of opulence. With its prime location in the heart of Nelson's vibrant cultural scene, the 'Luxury Penthouse' promises a lifestyle of indulgence and refinement for the discerning buyer.`
 }, {
     id: 7,
     name: "Beachfront Villa",
@@ -54,7 +59,8 @@ const properties = [{
     price: "$1,800,000",
     bedrooms: 5,
     bathrooms: 4,
-    image: "https://source.unsplash.com/category/house/?beachfront+villa"
+    image: "https://source.unsplash.com/category/house/?beachfront+villa",
+    description: `Welcome to the epitome of coastal luxury - the 'Beachfront Villa' nestled along the pristine shores of the Bay of Plenty. This exquisite villa offers the ultimate beachside retreat, where panoramic ocean views and soft sea breezes await at every turn. Step through the doors to discover a haven of elegance and tranquility, with spacious living areas bathed in natural light and adorned with tasteful coastal décor.<br><br>Outside, a private terrace beckons for al fresco dining or simply lounging in the sun, while direct access to the sandy beach offers endless opportunities for seaside relaxation and recreation. Whether you're seeking a serene escape or an entertainer's dream, the 'Beachfront Villa' is sure to exceed your every expectation of coastal living.`
 }, {
     id: 8,
     name: "Countryside Estate",
@@ -62,7 +68,8 @@ const properties = [{
     price: "$1,600,000",
     bedrooms: 6,
     bathrooms: 5,
-    image: "https://source.unsplash.com/category/house/?countryside+estate"
+    image: "https://source.unsplash.com/category/house/?countryside+estate",
+    description: `Welcome to the picturesque splendor of the 'Countryside Estate', nestled amidst the rolling hills and verdant pastures of Canterbury. This magnificent estate offers a rare opportunity to embrace the tranquility and beauty of rural living, without sacrificing modern comforts and conveniences. Sprawling across acres of pristine land, the property boasts a grand homestead surrounded by manicured gardens, towering trees, and sweeping vistas of the countryside.<br><br>Inside, discover spacious living areas adorned with timeless elegance and refined craftsmanship, perfect for both intimate gatherings and grand celebrations. With its idyllic setting and unparalleled charm, the 'Countryside Estate' invites you to create a legacy of cherished memories in the heart of New Zealand's breathtaking landscape.`
 }, {
     id: 9,
     name: "Downtown Condo",
@@ -70,7 +77,8 @@ const properties = [{
     price: "$700,000",
     bedrooms: 2,
     bathrooms: 2,
-    image: "https://source.unsplash.com/category/house/?downtown+condo"
+    image: "https://source.unsplash.com/category/house/?downtown+condo",
+    description: `Experience the pinnacle of urban living at the 'Downtown Condo', ideally situated in the heart of Auckland's vibrant city center. This sleek and sophisticated condominium offers unparalleled convenience and luxury with stunning views of the iconic skyline. Step inside to discover modern interiors adorned with high-end finishes and designer touches, providing the perfect backdrop for contemporary city living.<br><br>From the bustling streets below to the thriving cultural scene just moments away, the 'Downtown Condo' puts you at the epicenter of Auckland's cosmopolitan lifestyle. Embrace the energy of the city while enjoying the comfort and elegance of this exclusive urban retreat.`
 }, {
     id: 10,
     name: "Mountain Chalet",
@@ -78,7 +86,8 @@ const properties = [{
     price: "$900,000",
     bedrooms: 3,
     bathrooms: 2.5,
-    image: "https://source.unsplash.com/category/house/?mountain+chalet"
+    image: "https://source.unsplash.com/category/house/?mountain+chalet",
+    description: `Welcome to the enchanting 'Mountain Chalet', nestled amidst the rugged beauty of Otago's majestic peaks. This charming alpine retreat offers a cozy sanctuary where rustic charm meets modern comfort. Step inside to discover a warm and inviting interior, complete with wood-paneled walls, exposed beams, and a crackling fireplace to ward off the mountain chill.<br><br>Outside, panoramic views of snow-capped mountains and lush forests await, providing a breathtaking backdrop for outdoor adventures in every season. Whether you're seeking a tranquil escape or an adrenaline-fueled mountain getaway, the 'Mountain Chalet' offers the perfect blend of seclusion and adventure in one of New Zealand's most picturesque landscapes.`
 }, {
     id: 11,
     name: "Luxury Penthouse",
@@ -86,7 +95,8 @@ const properties = [{
     price: "$2,200,000",
     bedrooms: 4,
     bathrooms: 3.5,
-    image: "https://source.unsplash.com/category/house/?luxury+penthouse"
+    image: "https://source.unsplash.com/category/house/?luxury+penthouse",
+    description: `Introducing the epitome of refined living - the 'Luxury Penthouse' in the charming city of Nelson. Perched atop an exclusive residential tower, this exceptional penthouse offers unrivaled elegance and breathtaking views of Nelson's picturesque landscapes. Step into a world of luxury where every detail has been meticulously crafted to provide the utmost comfort and sophistication.<br><br>From the expansive living spaces bathed in natural light to the private terrace offering panoramic vistas of the surrounding mountains and coastline, this residence is a sanctuary of opulence. With its prime location in the heart of Nelson's vibrant cultural scene, the 'Luxury Penthouse' promises a lifestyle of indulgence and refinement for the discerning buyer.`
 }, {
     id: 12,
     name: "Beachfront Villa",
@@ -94,7 +104,8 @@ const properties = [{
     price: "$1,800,000",
     bedrooms: 5,
     bathrooms: 4,
-    image: "https://source.unsplash.com/category/house/?beachfront+villa"
+    image: "https://source.unsplash.com/category/house/?beachfront+villa",
+    description: `Welcome to the epitome of coastal luxury - the 'Beachfront Villa' nestled along the pristine shores of the Bay of Plenty. This exquisite villa offers the ultimate beachside retreat, where panoramic ocean views and soft sea breezes await at every turn. Step through the doors to discover a haven of elegance and tranquility, with spacious living areas bathed in natural light and adorned with tasteful coastal décor.<br><br>Outside, a private terrace beckons for al fresco dining or simply lounging in the sun, while direct access to the sandy beach offers endless opportunities for seaside relaxation and recreation. Whether you're seeking a serene escape or an entertainer's dream, the 'Beachfront Villa' is sure to exceed your every expectation of coastal living.`
 }, {
     id: 13,
     name: "Countryside Estate",
@@ -102,7 +113,8 @@ const properties = [{
     price: "$1,600,000",
     bedrooms: 6,
     bathrooms: 5,
-    image: "https://source.unsplash.com/category/house/?countryside+estate"
+    image: "https://source.unsplash.com/category/house/?countryside+estate",
+    description: `Welcome to the picturesque splendor of the 'Countryside Estate', nestled amidst the rolling hills and verdant pastures of Canterbury. This magnificent estate offers a rare opportunity to embrace the tranquility and beauty of rural living, without sacrificing modern comforts and conveniences. Sprawling across acres of pristine land, the property boasts a grand homestead surrounded by manicured gardens, towering trees, and sweeping vistas of the countryside.<br><br>Inside, discover spacious living areas adorned with timeless elegance and refined craftsmanship, perfect for both intimate gatherings and grand celebrations. With its idyllic setting and unparalleled charm, the 'Countryside Estate' invites you to create a legacy of cherished memories in the heart of New Zealand's breathtaking landscape.`
 }, {
     id: 14,
     name: "Downtown Condo",
@@ -110,7 +122,8 @@ const properties = [{
     price: "$700,000",
     bedrooms: 2,
     bathrooms: 2,
-    image: "https://source.unsplash.com/category/house/?downtown+condo"
+    image: "https://source.unsplash.com/category/house/?downtown+condo",
+    description: `Experience the pinnacle of urban living at the 'Downtown Condo', ideally situated in the heart of Auckland's vibrant city center. This sleek and sophisticated condominium offers unparalleled convenience and luxury with stunning views of the iconic skyline. Step inside to discover modern interiors adorned with high-end finishes and designer touches, providing the perfect backdrop for contemporary city living.<br><br>From the bustling streets below to the thriving cultural scene just moments away, the 'Downtown Condo' puts you at the epicenter of Auckland's cosmopolitan lifestyle. Embrace the energy of the city while enjoying the comfort and elegance of this exclusive urban retreat.`
 }, {
     id: 15,
     name: "Mountain Chalet",
@@ -118,7 +131,8 @@ const properties = [{
     price: "$900,000",
     bedrooms: 3,
     bathrooms: 2.5,
-    image: "https://source.unsplash.com/category/house/?mountain+chalet"
+    image: "https://source.unsplash.com/category/house/?mountain+chalet",
+    description: `Welcome to the enchanting 'Mountain Chalet', nestled amidst the rugged beauty of Otago's majestic peaks. This charming alpine retreat offers a cozy sanctuary where rustic charm meets modern comfort. Step inside to discover a warm and inviting interior, complete with wood-paneled walls, exposed beams, and a crackling fireplace to ward off the mountain chill.<br><br>Outside, panoramic views of snow-capped mountains and lush forests await, providing a breathtaking backdrop for outdoor adventures in every season. Whether you're seeking a tranquil escape or an adrenaline-fueled mountain getaway, the 'Mountain Chalet' offers the perfect blend of seclusion and adventure in one of New Zealand's most picturesque landscapes.`
 }, {
     id: 16,
     name: "Sunny Bungalow",
@@ -126,7 +140,8 @@ const properties = [{
     price: "$280,000",
     bedrooms: 3,
     bathrooms: 2,
-    image: "https://source.unsplash.com/category/house/?sunny+bungalow"
+    image: "https://source.unsplash.com/category/house/?sunny+bungalow",
+    description: `Welcome to 'Sunny Bungalow', nestled in the heart of picturesque Hawke's Bay. This charming bungalow invites you to embrace a lifestyle of relaxation and natural beauty. Bathed in sunlight, the property features spacious living areas adorned with large windows framing stunning views of the surrounding landscape.<br><br>Enjoy lazy mornings on the sun-drenched patio or explore the vibrant local community just moments away. With its warm ambiance and convenient location, 'Sunny Bungalow' offers the perfect blend of comfort and tranquility for your New Zealand retreat.`
 }, {
     id: 17,
     name: "Oceanview Condo",
@@ -134,7 +149,8 @@ const properties = [{
     price: "$420,000",
     bedrooms: 2,
     bathrooms: 1.5,
-    image: "https://source.unsplash.com/category/house/?oceanview+condo"
+    image: "https://source.unsplash.com/category/house/?oceanview+condo",
+    description: `Welcome to the 'Oceanview Condo', where coastal living meets luxury comfort on the stunning west coast of the North Island. Perched high above the rolling waves, this exquisite condo offers breathtaking panoramic views of the vast Pacific Ocean. Step onto your private balcony and immerse yourself in the sights and sounds of seaside serenity.<br><br>ssssssssssssssssInside, modern design meets coastal charm, with spacious living areas and sleek finishes throughout. Whether you're savoring sunset cocktails or strolling along the pristine shoreline just moments away, the 'Oceanview Condo' offers the ultimate escape for those seeking tranquility by the sea.`
 }, {
     id: 18,
     name: "Country Farmhouse",
@@ -142,7 +158,8 @@ const properties = [{
     price: "$550,000",
     bedrooms: 4,
     bathrooms: 3,
-    image: "https://source.unsplash.com/category/house/?country+farmhouse"
+    image: "https://source.unsplash.com/category/house/?country+farmhouse",
+    description: `"Welcome to the idyllic charm of the 'Country Farmhouse' nestled in the picturesque landscapes of the Manawatū-Whanganui region. This enchanting farmhouse offers a timeless retreat where rustic elegance meets rural tranquility. Surrounded by rolling hills and lush greenery, the property boasts a sense of serenity and seclusion, providing the perfect escape from the hustle and bustle of city life.<br><br>Step inside to discover cozy interiors adorned with authentic farmhouse details and warm wood accents. Whether you're unwinding by the fireplace or exploring the vast countryside just beyond your doorstep, the 'Country Farmhouse' invites you to experience the simple joys of country living in style.`
 }, {
     id: 19,
     name: "City Penthouse",
@@ -150,7 +167,8 @@ const properties = [{
     price: "$1,200,000",
     bedrooms: 3,
     bathrooms: 2,
-    image: "https://source.unsplash.com/category/house/?city+penthouse"
+    image: "https://source.unsplash.com/category/house/?city+penthouse",
+    description: `"Experience urban luxury at its finest with the 'City Penthouse' perched atop the vibrant skyline of Taranaki. This sleek and sophisticated penthouse offers unparalleled views of the cityscape, stretching out to the majestic Mount Taranaki in the distance. Step into a world of contemporary elegance, where high ceilings, designer finishes, and floor-to-ceiling windows create an atmosphere of spaciousness and style.<br><br>Whether you're entertaining guests in the expansive living area, indulging in gourmet meals prepared in the state-of-the-art kitchen, or relaxing on the private terrace overlooking the bustling city below, the 'City Penthouse' redefines cosmopolitan living in the heart of Taranaki."`
 }, {
     id: 20,
     name: "Lakeside Retreat",
@@ -158,7 +176,8 @@ const properties = [{
     price: "$780,000",
     bedrooms: 5,
     bathrooms: 4,
-    image: "https://source.unsplash.com/category/house/?lakeside+retreat"
+    image: "https://source.unsplash.com/category/house/?lakeside+retreat",
+    description: `Discover the essence of serenity at the 'Lakeside Retreat', nestled along the tranquil shores of Waikato's pristine lake. This idyllic sanctuary offers a haven of peace and natural beauty, where panoramic views of the glistening waters and lush surroundings greet you at every turn. Step inside to find a cozy yet elegant interior, thoughtfully designed to harmonize with the serene landscape outside.<br><br>Whether you're unwinding by the fireplace, savoring sunset views from the deck, or exploring the scenic trails meandering through the nearby forests, the 'Lakeside Retreat' promises a retreat like no other—a perfect fusion of luxury and nature in the heart of Waikato's enchanting countryside.`
 }];
 
 // get input elements from html - our filters
