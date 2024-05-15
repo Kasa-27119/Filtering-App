@@ -29,7 +29,6 @@ header h1 {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 24px;
     padding: 30px 0;
     background-color: #1f1f1f;
 }
@@ -51,12 +50,37 @@ select {
     border: 1px solid #1f1f1f;
 }
 
-.sorting-text {
-    text-align: center;
-    font-weight: 300;
-    font-size: 1em;
-    margin-top: 20px;
+/* sorting */
+
+.sorting-container {
+    background-color: #1f1f1f;
+    padding: 30px 0;
 }
+
+.sorting-container p {
+    text-align: center;
+    color: white;
+}
+
+.sorting-btn-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sorting-button {
+    border: 1px solid white;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: white;
+    border-radius: 16px;
+    background-color: #1f1f1f;
+}
+
+
+/* results */
 
 .results {
     display: grid;
@@ -95,7 +119,7 @@ select {
     height: 250px;
 }
 
-.property details {
+.property-details {
     padding: 16px;
 }
 
